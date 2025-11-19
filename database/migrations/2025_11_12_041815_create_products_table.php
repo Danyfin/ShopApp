@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('name');
             $table->string('descriprion');
             $table->float('price');
-            $table->int('sale');
-            $table->string('image_url');
+            $table->integer('quantity');
+            $table->string('image_url')->nullable();
             $table->timestamps();
         });
     }
